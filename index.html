@@ -289,11 +289,20 @@
 	<script>
   		AOS.init();
 
-  		//mobile version 
+  		
 
   		var width = document.body.clientWidth;
   		console.log(width)
   		if(width>320 && width < 768){
+  			var data=document.querySelectorAll('[data-aos-duration]')
+  		console.log(data)
+  		data.forEach(function(e){
+  			e.removeAttribute('data-aos-duration')
+  			e.removeAttribute('data-aos-fade-right')
+  		})
+  			
+  		}
+  		else{
   			window.addEventListener('scroll',function(){
   			var value=window.scrollY
   			var sec4=document.getElementById('sec4')
