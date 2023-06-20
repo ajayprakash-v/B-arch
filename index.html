@@ -10,7 +10,7 @@
 	<title></title>
 </head>
 <body>
-
+<main>
 	<nav class="navbar navbar-expand navbar-light bg-light" >
 		<div class="container">
 			<div class="navbar-brand">
@@ -282,7 +282,7 @@
 		</div>
 	</div>
 	</div>
-
+</main>
 	
 
 
@@ -293,7 +293,7 @@
 
   		var width = document.body.clientWidth;
   		console.log(width)
-  		if(width>=480){
+  		if(width>320 && width < 768){
   			window.addEventListener('scroll',function(){
   			var value=window.scrollY
   			var sec4=document.getElementById('sec4')
